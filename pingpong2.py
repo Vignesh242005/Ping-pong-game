@@ -1,7 +1,3 @@
-# Ping-Pong game with turtle module.
-# Done by Sri Manikanta Palakollu.
-# Version - 3.7.0
-
 import turtle as t
 import os
 
@@ -55,7 +51,7 @@ pen.color('skyblue')
 pen.penup()
 pen.hideturtle()
 pen.goto(0,260)
-pen.write("Player A: 0                    Player B: 0 ",align="center",font=('Monaco',24,"normal"))
+pen.write("Player A: 0 Player B: 0 ",align="center",font=('Monaco',24,"normal"))
 
 
 # Moving the left Paddle using the keyboard
@@ -123,7 +119,7 @@ while True:
         ball_dx = ball_dx * -1
         player_a_score = player_a_score + 1
         pen.clear()
-        pen.write("Player A: {}                    Player B: {} ".format(player_a_score,player_b_score),align="center",font=('Monaco',24,"normal"))
+        pen.write("Player A: {}          Player B: {} ".format(player_a_score,player_b_score),align="center",font=('Monaco',24,"normal"))
         os.system("afplay wallhit.wav&")
 
 
@@ -133,7 +129,7 @@ while True:
         ball_dx = ball_dx * -1
         player_b_score = player_b_score + 1
         pen.clear()
-        pen.write("Player A: {}                    Player B: {} ".format(player_a_score,player_b_score),align="center",font=('Monaco',24,"normal"))
+        pen.write("Player A: {}        Player B: {} ".format(player_a_score,player_b_score),align="center",font=('Monaco',24,"normal"))
         os.system("afplay wallhit.wav&")
 
 
